@@ -28,8 +28,12 @@ get '/random-cat' do
   # </div>"
 end
 
-get '/named-cat' do
+get '/formed-cat' do
+  erb :form
+end
+
+post '/named-cat' do
   p params
   @name = params[:name]
-  erb(:index)
+  erb :index
 end
