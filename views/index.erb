@@ -3,6 +3,11 @@
 <img src = 'https://media.newyorker.com/photos/5dfab39dde5fcf00086aec77/16:9/w_1280,c_limit/Lane-Cats.jpg'>
 </div>
 
-<% if @name %> 
+<% if @name %>
 <h1>My name is <%= @name %>!</h1>
 <% end %>
+
+<form action="/named-cat">
+<input type="text" name="name">
+<input type="submit" value="Submit">
+<form/>
